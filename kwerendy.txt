@@ -1,0 +1,6 @@
+INSERT INTO zgloszenia (ratownicy_id, dyspozytorzy_id, adres,pilne, czas_zgloszenia) values('1', '4','Warszawa, Staszica 34/5', 1, curtime())
+___
+SELECT adres, dyspozytorzy_id FROM zgloszenia WHERE ratownicy_id=3
+___
+CREATE USER 'anna'@'%' IDENTIFIED VIA mysql_native_password USING '***';GRANT USAGE ON *.* TO 'anna'@'%' REQUIRE NONE WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0;
+___
